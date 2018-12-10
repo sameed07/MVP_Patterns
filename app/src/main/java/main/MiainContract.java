@@ -7,9 +7,11 @@ package main;
 public interface MiainContract {
 
     interface MvpView{
-
+        void showSignInScreen();
+        void showSignUpScreen();
     }
     interface Presenter{
-
+        void handleSignInButtonClick();
+        void handleSignUnButtonClick();
     }
 }

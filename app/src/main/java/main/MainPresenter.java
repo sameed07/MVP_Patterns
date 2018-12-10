@@ -11,4 +11,16 @@ public class MainPresenter implements MiainContract.Presenter {
         this.mvpView = mvpView;
     }
 
+    // Presenter methods
+    @Override
+    public void handleSignInButtonClick() {
+
+        mvpView.showSignInScreen();
+    }
+
+    @Override
+    public void handleSignUnButtonClick() {
+
+        mvpView.showSignUpScreen();
+    }
 }

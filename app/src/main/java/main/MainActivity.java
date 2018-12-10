@@ -2,6 +2,7 @@ package main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.vchat.muhammadfaizan.mvppatterns.R;
 
@@ -20,5 +21,20 @@ public class MainActivity extends AppCompatActivity implements MiainContract.Mvp
 
         mPresenter = new MainPresenter(this);
 
+    }
+
+    //these are MVP view methods
+
+    @Override
+    public void showSignInScreen() {
+
+        Toast.makeText(this, "Taking user to signun Screen", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void showSignUpScreen() {
+
+        Toast.makeText(this, "Taking user to signupScreen", Toast.LENGTH_SHORT).show();
+        
     }
 }
